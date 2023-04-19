@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(timelapse.mp4);
+    background-size: cover;
+}
+
+.watch {
+    margin-top: 100px;
+    user-select: none;
+    position: fixed;
+}
+
+.watch .time {
+    opacity: 0.8;
+    height: 100px;
+    background: #0e1111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 0px 10px;
+    border: #f5f5f5 2px solid;
+
+}
+
+.watch .time span {
+    color: #f5f5f5;
+    width: 100px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.time span.colon {
+    width: 10px;
+}
+
+.time span.ms-colon {
+
+    color: #f5f5f5;
+}
+
+.time span.millisecond {
+    color: #f5f5f5;
+}
+
+.watch .buttons {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.buttons button {
+    padding: 5px 15px;
+    outline: none;
+    border: #f5f5f5 1px solid;
+    margin: 0px 5px;
+    color: #f5f5f5;
+    cursor: pointer;
+    background-color: #0e1111;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.buttons .start:hover {
+    padding: 5px 15px;
+    outline: none;
+    border: 1px solid #39ff14;
+    margin: 0px 5px;
+    color: #0e1111;
+    cursor: pointer;
+    background-color: #39ff14;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 5px;
+    box-shadow: 0 0 2.5px #39ff14, 0 0 10px #39ff14, 0 0 20px #39ff14;
+}
+
+.buttons .stop:hover {
+    padding: 5px 15px;
+    outline: none;
+    border: 1px solid #FF3131;
+    margin: 0px 5px;
+    color: #0e1111;
+    cursor: pointer;
+    background-color: #FF3131;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 5px;
+    box-shadow: 0 0 2.5px #FF3131, 0 0 10px #FF3131, 0 0 20px #FF3131;
+}
+
+.buttons button.active {
+    opacity: 0.5;
+}
+
+.buttons button.stopActive {
+    opacity: 0.5;
+}
+
+.time span.g_active {
+    color: #39ff14;
+}
+
+.time span.r_active {
+    color: #FF3131;
+}
+
+.time span.w_active {
+    color: #f5f5f5;
+}
+
+
+
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }

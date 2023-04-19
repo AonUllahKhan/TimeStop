@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop-Watch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="timelapse.mp4" type="video/mp4">
+      </video>
+
+    <div class="watch">
+        <div class="time">
+            <span class="hour">00</span>
+            <span class="colon">:</span>
+            <span class="minute">00</span>
+            <span class="colon">:</span>
+            <span class="second">00</span>
+            <span class="colon ms-colon">:</span>
+            <span class="millisecond">00</span>
+        </div>
+        <div class="buttons">
+            <button class="start" id="resume" onclick="resumeFunction()">START</button>
+            <button class="stop" id="pause" onclick="pauseFunction()">STOP</button>
+            <button class="reset">RESET</button>
+        </div>
+    </div>
+    <script src="watch.js"></script>
+    
+</body>
+</html>
